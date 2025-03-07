@@ -9,6 +9,7 @@ html {
   scroll-behavior: smooth;
   margin-left: 100px;
   margin-right: 100px;
+  overflow-x: hidden;
 }
 
 @font-face {
@@ -111,13 +112,15 @@ html {
 
 .menu-list > .landing-menu > li > a {
   color: #000;
-  margin: 0 20px;
   text-decoration: none;
 }
 
 .menu-list .landing-menu {
   display: flex;
   list-style-type: none;
+  width: 50%;
+  max-width: 50%;
+  justify-content: space-between;
 }
 
 .landing .menu-list-btn {
@@ -137,6 +140,7 @@ html {
 
 .header-text .header-sub h1 {
   width: 531px;
+  max-width: 90%;
   font-size: 60px;
   font-weight: 500;
   line-height: 76.56px;
@@ -315,16 +319,17 @@ html {
 }
 
 .cta {
-  position: relative;
   height: 347px;
   background-color: #f3f3f3;
   border-radius: 45px;
   margin-top: 83.5px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .cta .cta-text {
   height: auto;
-  width: 500px;
+  width: 100%;
   padding: 60px 0 60px 60px;
 }
 
@@ -340,6 +345,7 @@ html {
   font-family: Space-Grotesk-Light;
   margin-top: 26px;
   margin-bottom: 26px;
+  max-width: 90%;
 }
 
 .cta .cta-text .cta-btn {
@@ -360,9 +366,8 @@ html {
 }
 
 .cta .cta-img {
-  position: absolute;
-  top: -26px;
-  right: 0;
+  max-width: 45%;
+  margin-top: -26px;
 }
 /* End: Service */
 
@@ -414,26 +419,25 @@ html {
   border: 1px solid #191a23;
   border-radius: 45px;
   display: flex;
-  position: relative;
   align-items: center;
   font-family: Space-Grotesk-Medium;
   margin-bottom: 30px;
+  justify-content: space-between;
+  padding: 41px 60px;
 }
 
 .process .process-box .process-number {
   font-size: 60px;
   font-weight: 500;
-  margin: 41px 25px 41px 60px;
 }
 
 .process .process-box .process-text {
   font-size: 30px;
   font-weight: 500;
+  width: 80%;
 }
 
 .process .process-box button {
-  position: absolute;
-  right: 57px;
   font-size: 25px;
   border: 1px solid #191a23;
   background-color: #f3f3f3;
@@ -457,20 +461,18 @@ html {
   border: 1px solid #191a23;
   border-radius: 45px;
   background-color: #fff;
-  width: 30%;
+  width: 31%;
   margin-bottom: 40px;
   padding: 40px 35px;
 }
 
 .card-content .card-header {
-  position: relative;
   display: flex;
+  justify-content: space-between;
 }
 
 .card-content .card-header .card-header-text {
-  display: grid;
   align-self: flex-end;
-  margin-left: 20px;
 }
 
 .card-content .card-header .card-header-text h2 {
@@ -494,12 +496,6 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.card-content .card-header t {
-  position: absolute;
-  right: 0;
-  top: 0;
 }
 
 .teams-line {
@@ -615,13 +611,14 @@ html {
 
 /* Begin: Contact */
 .form {
-  position: relative;
   border: none;
   border-radius: 45px;
   background-color: #f3f3f3;
   padding: 60px 100px 80px;
   font-family: Space-Grotesk-Light;
   overflow: hidden;
+  display: flex;
+  justify-content: space-between;
 }
 
 .form .radio-btn {
@@ -672,7 +669,7 @@ input[type="radio"]:checked::before {
   border-radius: 14px;
   margin-top: 5px;
   padding: 18px 30px;
-  width: 55%;
+  width: 150%;
 }
 
 .fields .fields-sub textarea {
@@ -682,12 +679,12 @@ input[type="radio"]:checked::before {
   border-radius: 14px;
   margin-top: 5px;
   padding: 18px 30px;
-  width: 55%;
+  width: 150%;
   height: 190px;
 }
 
 .send-btn button {
-  width: 55%;
+  width: 100%;
   font-family: Space-Grotesk-Light;
   background-color: #191a23;
   border-radius: 14px;
@@ -705,9 +702,7 @@ input[type="radio"]:checked::before {
 }
 
 .form .form-img {
-  position: absolute;
-  top: 60px;
-  right: -25%;
+  width: 24%;
 }
 /* End: Contact */
 
@@ -743,9 +738,18 @@ input[type="radio"]:checked::before {
   margin-right: 10px;
 }
 
+.footer-header .footer-header-sub .footer-header-list {
+  width: 60%;
+  max-width: 60%;
+}
+
+.footer-header .footer-header-sub .footer-header-list .landing-menu {
+  display: flex;
+  justify-content: space-between;
+}
+
 .footer-header .footer-header-sub .footer-header-list li {
   list-style-type: none;
-  padding: 0 15px;
   line-height: 30px;
   font-size: 18px;
   font-weight: 400;
@@ -753,6 +757,12 @@ input[type="radio"]:checked::before {
 
 .footer-header .footer-header-sub .footer-header-list a {
   color: #fff;
+}
+
+.footer-header .footer-header-sub .footer-header-icon {
+  display: flex;
+  justify-content: space-between;
+  width: 13%;
 }
 
 .footer-header .footer-header-sub .footer-header-icon a {
@@ -763,7 +773,6 @@ input[type="radio"]:checked::before {
   text-decoration: none;
   width: 30px;
   height: 30px;
-  margin-left: 20px;
 }
 
 .footer-header .footer-header-sub .footer-header-icon t {
@@ -777,6 +786,10 @@ input[type="radio"]:checked::before {
   position: relative;
   display: flex;
   margin-top: 66px;
+}
+
+.footer-header .footer-header-text .footer-contact {
+  max-width: 35%;
 }
 
 .footer-header .footer-header-text .footer-contact h5 {
@@ -848,6 +861,7 @@ input[type="radio"]:checked::before {
   font-weight: 400;
   font-size: 18px;
   line-height: 28px;
+  display: flex;
 }
 
 .footer .footer-text a {
@@ -860,8 +874,9 @@ input[type="radio"]:checked::before {
   html {
     scroll-behavior: smooth;
     width: 100%;
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: 0px;
+    margin-right: 0px;
+    overflow-x: hidden;
   }
 
   .landing .row {
@@ -869,16 +884,24 @@ input[type="radio"]:checked::before {
     align-items: center;
   }
 
+  .landing .menu-list-btn {
+    padding: 0;
+  }
+
+  .landing .landing-header .menu-list a {
+    align-items: center;
+  }
+
   .landing .header .header-pic img {
-    width: 100%;
+    max-width: 100%;
   }
 
   .cta .cta-img {
-    width: 45%;
+    max-width: 45%;
   }
 
-  .teams .card .card-header-text {
-    margin-top: 40px;
+  .card-content .card-header {
+    display: grid;
   }
 
   .testimonials .testimonials-clipboard .clipboard-sub {
@@ -886,9 +909,148 @@ input[type="radio"]:checked::before {
     margin-right: 80px;
   }
 
+  .fields .fields-sub .fields-sub-inp {
+    width: 100%;
+  }
+  .fields .fields-sub textarea {
+    width: 100%;
+  }
+
   .form .form-img {
-    position: absolute;
-    top: 60px;
     right: -33%;
+  }
+
+  .footer-header .footer-header-sub .footer-header-icon a {
+    margin: 0;
+  }
+
+  .footer-header .footer-header-sub .footer-header-list li {
+    padding: 0;
+  }
+
+  .footer-header .footer-header-text .footer-subscribe {
+    padding: 0;
+  }
+}
+
+@media (max-width: 740px) {
+  html {
+    scroll-behavior: smooth;
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+    overflow-x: hidden;
+  }
+
+  .title {
+    display: block;
+  }
+
+  .row {
+    display: grid;
+  }
+
+  .landing .landing-header .menu-list {
+    display: none;
+  }
+
+  .landing .header .header-pic img {
+    width: 0%;
+  }
+
+  .landing .list-logo {
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+  }
+
+  .block-list .block {
+    width: 100%;
+  }
+
+  .block-list .row {
+    justify-content: center;
+  }
+
+  .cta {
+    display: block;
+  }
+
+  .cta .cta-img img {
+    width: 0;
+  }
+
+  .case-box {
+    display: grid;
+    padding: 25px;
+  }
+
+  .case-box .case-text {
+    margin: 20px 0;
+  }
+
+  .case-box .case-line {
+    height: auto;
+  }
+
+  .process .process-box {
+    padding: 30px 20px;
+  }
+
+  .process .process-box .process-text {
+    display: block;
+  }
+
+  .process .process-box button {
+    right: 15px;
+  }
+
+  .teams .card {
+    width: 100%;
+  }
+
+  .testimonials-sub .card-text {
+    width: 400px;
+  }
+
+  .testimonials .testimonials-clipboard .clipboard-sub {
+    margin: 0 20px;
+  }
+
+  .form {
+    padding: 60px 30px 80px;
+    display: block;
+  }
+
+  .form .form-img img {
+    width: 0;
+  }
+
+  .fields .fields-sub textarea,
+  .fields .fields-sub .fields-sub-inp {
+    width: 100%;
+  }
+
+  .footer-header .footer-header-sub .footer-header-list {
+    display: none;
+  }
+
+  .footer-header .footer-header-sub .footer-header-icon {
+    width: 35%;
+  }
+
+  .footer {
+    padding: 55px 20px 50px;
+  }
+
+  .footer-header .footer-header-text .footer-subscribe {
+    display: grid;
+    padding: 20px;
+  }
+
+  .footer-header .footer-header-text .footer-subscribe input {
+    width: 100%;
+    margin: 0;
   }
 }
